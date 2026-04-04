@@ -45,4 +45,14 @@ Future Improvements
 - Build interactive dashboard using Power BI / Streamlit
 - Add more advanced analytics
 
+ ## 📊 Visual Output
+
+### Product Analysis
+![Product](1.png)
+
+### Customer Analysis
+![Customer](2.png)
+
+### Sales Trend
+![Trend](3.png)
 
