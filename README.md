@@ -1,49 +1,27 @@
- Sales Dashboard Analysis
+ # 📊 Sales Dashboard with ML Prediction
 
-This project analyzes sales data using Python, Pandas, and Seaborn to generate insights and visualizations.
+## 🚀 Project Overview
+This project is an interactive Sales Dashboard built using Streamlit. It provides insights into sales performance and includes a Machine Learning model to predict future sales.
 
+## 🔧 Features
+- 📈 Sales Trends Visualization
+- 📊 Sales Distribution Analysis
+- 📌 Key Metrics (Total Sales, Avg Sales, Orders)
+- 🎯 Region & Date Filters
+- 🔮 Sales Prediction using Linear Regression
 
-Project Overview
-
-- Created a sales dataset with orders, customers, products, quantity, and price
-- Calculated total revenue
-- Analyzed revenue by product and customer
-- Identified top-performing products and customers
-- Visualized trends using graphs
-
-
- Technologies Used
-
+## 🛠️ Tech Stack
 - Python
 - Pandas
 - Matplotlib
-- Seaborn
+- Streamlit
+- Scikit-learn
 
+## 🌐 Live App
+[Click Here to View App](https://salesdashboardanalysis-tzjfns8rfsrg87hcwvnmmd.streamlit.app/)
 
-Key Insights
-
-- Laptop generated the highest revenue
-- Customer 101 is the top customer
-- Daily revenue shows fluctuating trends
-
-
-Visualizations
-
-- Revenue by Product (Bar Chart)
-- Revenue by Customer (Bar Chart)
-- Daily Revenue Trend (Line Chart)
-
-
-File Included
-
-- "sales_dashboard_analysis.ipynb" → Complete analysis notebook
-
-
-Future Improvements
-
-- Add real dataset
-- Build interactive dashboard using Power BI / Streamlit
-- Add more advanced analytics
+## 📂 Dataset
+Sales dataset with attributes like region, product category, sales amount, etc.
 
  ## 📊 Visual Output
 
@@ -55,4 +33,9 @@ Future Improvements
 
 ### Sales Trend
 ![Trend](3.png)
+
+
+## 📌 Author
+Ashwini
+
 
