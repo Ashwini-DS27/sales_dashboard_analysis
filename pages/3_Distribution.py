@@ -1,36 +1,14 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
+import matplotlib.pyplot as plt
 
-st.title("🧁 Sales Distribution")
+st.title("🍩 Sales Distribution")
 
-# Load data
 df = pd.read_csv("sales_data.csv")
 
-# Sidebar filters
-st.sidebar.header("Filters")
+category = df["Product_Category"].value_counts()
 
-region = st.sidebar.selectbox("Select Region", df["Region"].unique())
+fig, ax = plt.subplots()
+ax.pie(category, labels=category.index, autopct="%1.1f%%")
 
-filtered_df = df[df["Region"] == region]
-
-# Group data
-category_sales = filtered_df.groupby("Product_Category")["Sales_Amount"].sum().reset_index()
-
-# Pie chart
-fig = px.pie(
-    category_sales,
-    names="Product_Category",
-    values="Sales_Amount",
-    title="Sales Distribution"
-)
-
-st.plotly_chart(fig, use_container_width=True)
-
-# Download button
-st.download_button(
-    label="⬇ Download Data",
-    data=filtered_df.to_csv(index=False),
-    file_name="filtered_sales.csv",
-    mime="text/csv"
-)
+st.pyplot(fig)
