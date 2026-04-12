@@ -5,6 +5,12 @@ import matplotlib.pyplot as plt
 st.title("🍩 Sales Distribution")
 
 df = pd.read_csv("sales_data.csv")
+st.subheader("📊 Distribution Insight")
+
+st.write("""
+- Some categories dominate revenue  
+- Distribution helps identify focus areas  
+""")
 
 category = df["Product_Category"].value_counts()
 
